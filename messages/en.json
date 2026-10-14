@@ -1,7 +1,7 @@
 {
-  "HomePage": {
-      "title": "Pink Website",
-      "description": "engirl",
-      "button": "Design UTFPR"
+  "Navbar": {
+      "item1": "About",
+      "item2": "Work",
+      "item3": "Contact"
   }
 }

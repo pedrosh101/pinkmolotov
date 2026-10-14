@@ -1,7 +1,7 @@
 {
-  "HomePage": {
-      "title": "Site da Pink",
-      "description": "portugas",
-      "button": "Design UTFPR"
+  "Navbar": {
+      "item1": "Sobre",
+      "item2": "Obras",
+      "item3": "Contato"
   }
 }
