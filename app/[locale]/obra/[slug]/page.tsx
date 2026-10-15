@@ -41,8 +41,8 @@ export default async function ObraPage({ params }: Props) {
       <Navbar />
 
       <main
-        className="min-h-screen w-full bg-neutral-50 pt-40 px-6 pb-20 md:px-16 bg-cover bg-center bg-fixed font-kyiv"
-        style={{ backgroundImage: "url('/fundo-rosa.png')" }}
+        className="min-h-screen w-full bg-neutral-50 md:pt-40 pt-28 px-6 pb-20 md:px-16 bg-cover bg-center bg-fixed font-kyiv"
+        style={{ backgroundImage: "url('/fundo-rosa.webp')" }}
       >
         <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row">
           <div className="flex flex-1 items-start justify-center">
@@ -52,7 +52,7 @@ export default async function ObraPage({ params }: Props) {
               width={1200}
               height={1600}
               priority
-              className="h-[96vh] w-full object-contain shadow-xl"
+              className="md:h-[92vh] w-full object-contain shadow-xl"
             />
           </div>
 

@@ -14,7 +14,7 @@ export default async function PinkMolotovPage({
     <>
       <Navbar />
       <main className="min-h-screen w-full pt-26 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/fundo-rosa.png')" }}>
+        style={{ backgroundImage: "url('/fundo-rosa.webp')" }}>
         <ArtistSection className="flex flex-col w-full" />
       </main>
     </>

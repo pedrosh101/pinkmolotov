@@ -111,8 +111,8 @@ export default function Navbar() {
     : null;
 
   const menuLinks = (
-    <ul className="flex flex-col md:flex-row gap-8 md:gap-12 2xl:gap-16 text-black/80 text-md">
-      <li className="border-b border-black/10 md:border-none py-3 md:py-0">
+    <ul className="flex flex-col md:flex-row gap-8 md:gap-12 2xl:gap-16 text-white md:text-black text-md">
+      <li className="border-b border-black/10 md:border-none py-3 md:py-0 ">
         {isDesktop && isHomePage ? (
           <a
             href="#about-section"
@@ -140,7 +140,7 @@ export default function Navbar() {
           {t("item2")}
         </Link>
       </li>
-            <li className="border-b border-black/10 md:border-none py-3 md:py-0">
+      <li className="border-b border-black/10 md:border-none py-3 md:py-0">
         <Link
           href="/encomendas"
           onClick={() => setOpen(false)}
@@ -158,7 +158,6 @@ export default function Navbar() {
           {t("item4")}
         </Link>
       </li>
-
     </ul>
   );
 
@@ -196,7 +195,10 @@ export default function Navbar() {
           }}
         >
           <nav>{menuLinks}</nav>
+
+
           <LanguageSwitcher />
+
         </div>
 
         {/* --- MOBILE NAVIGATION --- */}
@@ -207,7 +209,7 @@ export default function Navbar() {
             transform: "translateY(-50%)",
           }}
         >
-          <LanguageSwitcher />
+          
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger className="text-black p-1" aria-label={t("openMenu")}>
@@ -215,7 +217,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[85vw] max-w-sm bg-white p-0 flex flex-col [&>button]:hidden border-l border-black/10"
+              className="w-[85vw] max-w-sm bg-pink-400 p-0 flex flex-col [&>button]:hidden border-l border-black/10"
             >
               <SheetHeader className="h-20 px-6 flex flex-row items-center justify-between border-b border-black/5 space-y-0">
                 <SheetTitle>
@@ -229,11 +231,18 @@ export default function Navbar() {
                     />
                   </Link>
                 </SheetTitle>
-                <SheetClose className="text-black p-1" aria-label={t("closeMenu")}>
+                <SheetClose
+                  className="text-black p-1"
+                  aria-label={t("closeMenu")}
+                >
                   <X size={24} />
                 </SheetClose>
               </SheetHeader>
 
+<div className="ml-4">
+
+              <LanguageSwitcher />
+</div>
               <nav className="flex-1 overflow-y-auto px-6 py-6 font-serif">
                 {menuLinks}
               </nav>

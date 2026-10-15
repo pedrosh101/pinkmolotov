@@ -31,7 +31,7 @@ export default async function ContactPage({ params }: Props) {
       <Navbar />
       <main
         className="min-h-screen w-full bg-cover bg-center bg-fixed px-6 pb-24 pt-32 font-kyiv md:px-16 md:pt-40"
-        style={{ backgroundImage: "url('/fundo-rosa.png')" }}
+        style={{ backgroundImage: "url('/fundo-rosa.webp')" }}
       >
         <div className="mx-auto max-w-3xl">
           <h1 className="mb-6 text-4xl text-black 2xl:text-5xl">{t("title")}</h1>

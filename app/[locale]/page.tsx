@@ -35,7 +35,7 @@ export default function HomePage() {
       <main
         ref={scrollerRef}
         className="min-h-screen w-full 2xl:pt-20 pt-10 overflow-y-auto overflow-x-hidden md:h-screen md:overflow-x-auto md:overflow-y-hidden bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/fundo-rosa.png')" }}
+        style={{ backgroundImage: "url('/fundo-rosa.webp')" }}
       >
         <div className="flex flex-col md:flex-row md:h-full md:w-max items-center md:items-start gap-14 md:gap-0 px-6 md:px-20 py-10">
           {artworks.map((art, index) => (
