@@ -1,7 +1,86 @@
 {
   "Navbar": {
-      "item1": "Sobre",
-      "item2": "Obras",
-      "item3": "Contato"
+    "item1": "Sobre",
+    "item2": "Obras",
+    "item3": "Encomendas",
+    "item4": "Contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "logoAlt": "Logo Pink Molotov"
+  },
+  "LanguageSwitcher": {
+    "label": "Selecione o idioma"
+  },
+  "About": {
+    "title": "Sobre",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  "Work": {
+    "title": "Obras",
+    "sections": "Seções"
+  },
+  "Artwork": {
+    "back": "← Voltar",
+    "backToWork": "← Todas as obras",
+    "size": "Tamanho",
+    "technique": "Técnica",
+    "details": "Detalhes"
+  },
+  "Gallery": {
+    "open": "Ampliar imagem",
+    "close": "Fechar",
+    "previous": "Imagem anterior",
+    "next": "Próxima imagem"
+  },
+  "Contact": {
+    "title": "Contato",
+    "intro": "Quer falar sobre uma obra, uma encomenda ou só trocar uma ideia? Me chama por aqui.",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Conversar pelo WhatsApp",
+    "whatsappMessage": "Olá, Pink! Vim pelo seu site e gostaria de conversar.",
+    "emailLabel": "E-mail",
+    "emailCta": "Enviar e-mail",
+    "instagramLabel": "Instagram",
+    "commissionsText": "Quer uma obra feita sob medida?",
+    "commissionsCta": "Veja como funcionam as encomendas"
+  },
+  "Commissions": {
+    "title": "Cada obra nasce de uma troca",
+    "intro": "Se você quer encomendar uma obra, este é o caminho:",
+    "steps": {
+      "1": {
+        "title": "Conversa inicial",
+        "text": "Me chame pelo WhatsApp contando um pouco sobre o que você procura. Pode mandar referências, medidas, cores, o ambiente onde a obra vai ficar ou só uma ideia solta."
+      },
+      "2": {
+        "title": "Proposta",
+        "text": "A partir da nossa conversa, a gente define formato, tamanho, valor, prazo estimado de produção e os demais detalhes da encomenda."
+      },
+      "3": {
+        "title": "Confirmação",
+        "text": "Com tudo alinhado, eu envio um documento simples com as especificações da obra, condições de pagamento, prazo e envio. O trabalho começa depois da confirmação e do pagamento da entrada."
+      },
+      "4": {
+        "title": "Processo de criação",
+        "text": "A obra é desenvolvida a partir do que combinamos, mantendo a minha linguagem e o meu processo. Durante a produção, compartilho atualizações sobre o andamento."
+      },
+      "5": {
+        "title": "Aprovação e envio",
+        "text": "Quando a obra estiver pronta, envio fotos para a sua aprovação. Com o pagamento final confirmado, a obra é embalada com cuidado e enviada."
+      }
+    },
+    "notesTitle": "Algumas observações importantes",
+    "notes": {
+      "1": "Todas as obras são originais e feitas à mão;",
+      "2": "Não faço cópias exatas de imagens, fotografias ou obras de terceiros;",
+      "3": "Pequenas variações fazem parte do processo e tornam cada obra única;",
+      "4": "Mudanças significativas depois do início da produção podem alterar prazo e orçamento;",
+      "5": "Os prazos variam de acordo com o tamanho e a complexidade da obra."
+    },
+    "ctaTitle": "Vamos conversar",
+    "ctaText": "Se você quer começar uma encomenda ou só bater um papo sobre uma ideia, vou adorar te ouvir.",
+    "ctaWhatsapp": "Quero conversar pelo WhatsApp",
+    "ctaEmail": "Quero enviar um e-mail",
+    "whatsappMessage": "Olá, Pink! Gostaria de fazer uma encomenda."
   }
 }

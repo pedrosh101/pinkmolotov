@@ -1,7 +1,15 @@
+import { setRequestLocale } from "next-intl/server";
 import Navbar from "../../../components/navbar";
 import ArtistSection from "../../../components/ArtistSection";
 
-export default function PinkMolotovPage() {
+export default async function PinkMolotovPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <Navbar />

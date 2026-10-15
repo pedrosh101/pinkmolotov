@@ -1,7 +1,86 @@
 {
   "Navbar": {
-      "item1": "About",
-      "item2": "Work",
-      "item3": "Contact"
+    "item1": "About",
+    "item2": "Work",
+    "item3": "Commissions",
+    "item4": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "logoAlt": "Pink Molotov logo"
+  },
+  "LanguageSwitcher": {
+    "label": "Select language"
+  },
+  "About": {
+    "title": "About",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  "Work": {
+    "title": "Work",
+    "sections": "Sections"
+  },
+  "Artwork": {
+    "back": "← Back",
+    "backToWork": "← All works",
+    "size": "Size",
+    "technique": "Technique",
+    "details": "Details"
+  },
+  "Gallery": {
+    "open": "Enlarge image",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image"
+  },
+  "Contact": {
+    "title": "Contact",
+    "intro": "Want to talk about a piece, a commission or just share an idea? Reach out here.",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Chat on WhatsApp",
+    "whatsappMessage": "Hi Pink! I found you through your website and I'd love to chat.",
+    "emailLabel": "Email",
+    "emailCta": "Send an email",
+    "instagramLabel": "Instagram",
+    "commissionsText": "Looking for a custom piece?",
+    "commissionsCta": "See how commissions work"
+  },
+  "Commissions": {
+    "title": "Every piece is born from an exchange",
+    "intro": "If you'd like to commission an artwork, this is how it works:",
+    "steps": {
+      "1": {
+        "title": "First conversation",
+        "text": "Message me on WhatsApp and tell me a little about what you're looking for. You can share references, dimensions, colors, the space where the piece will live, or just a loose idea."
+      },
+      "2": {
+        "title": "Proposal",
+        "text": "Based on our conversation, we'll define the format, size, price, estimated production time and any other details of the commission."
+      },
+      "3": {
+        "title": "Confirmation",
+        "text": "Once everything is aligned, I'll send a simple document with the specifications of the piece, payment terms, deadline and shipping. Work begins after the confirmation and the down payment."
+      },
+      "4": {
+        "title": "Creative process",
+        "text": "The piece is developed from what we agreed on, while keeping my own language and process. During production, I'll share updates on how it's going."
+      },
+      "5": {
+        "title": "Approval and shipping",
+        "text": "When the piece is finished, I'll send you photos for approval. Once the final payment is confirmed, the artwork is carefully packed and shipped."
+      }
+    },
+    "notesTitle": "A few important notes",
+    "notes": {
+      "1": "All pieces are original and handmade;",
+      "2": "I don't make exact copies of images, photographs or other people's work;",
+      "3": "Small variations are part of the process and make each piece unique;",
+      "4": "Significant changes after production has started may affect the deadline and the quote;",
+      "5": "Production times vary depending on the size and complexity of the piece."
+    },
+    "ctaTitle": "Let's talk",
+    "ctaText": "If you'd like to start a commission or just chat about an idea, I'd love to hear from you.",
+    "ctaWhatsapp": "I want to chat on WhatsApp",
+    "ctaEmail": "I want to send an email",
+    "whatsappMessage": "Hi Pink! I'd like to commission a piece."
   }
 }

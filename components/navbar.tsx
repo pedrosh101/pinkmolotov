@@ -2,10 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { Link } from "../i18n/navigation";
 import { useTranslations } from "next-intl";
 import useIsDesktop from "../hooks/useIsDesktop";
 import {
@@ -113,7 +113,7 @@ export default function Navbar() {
   const menuLinks = (
     <ul className="flex flex-col md:flex-row gap-8 md:gap-12 2xl:gap-16 text-black/80 text-md">
       <li className="border-b border-black/10 md:border-none py-3 md:py-0">
-        {isDesktop ? (
+        {isDesktop && isHomePage ? (
           <a
             href="#about-section"
             onClick={handleAboutClick}
@@ -132,23 +132,33 @@ export default function Navbar() {
         )}
       </li>
       <li className="border-b border-black/10 md:border-none py-3 md:py-0">
-        <a
-          href="#"
+        <Link
+          href="/work"
           onClick={() => setOpen(false)}
           className="hover:text-pink-600/80 block w-full"
         >
           {t("item2")}
-        </a>
+        </Link>
       </li>
-      <li className="border-b border-black/10 md:border-none py-3 md:py-0">
-        <a
-          href="#"
+            <li className="border-b border-black/10 md:border-none py-3 md:py-0">
+        <Link
+          href="/encomendas"
           onClick={() => setOpen(false)}
           className="hover:text-pink-600/80 block w-full"
         >
           {t("item3")}
-        </a>
+        </Link>
       </li>
+      <li className="border-b border-black/10 md:border-none py-3 md:py-0">
+        <Link
+          href="/contact"
+          onClick={() => setOpen(false)}
+          className="hover:text-pink-600/80 block w-full"
+        >
+          {t("item4")}
+        </Link>
+      </li>
+
     </ul>
   );
 
@@ -164,7 +174,7 @@ export default function Navbar() {
           <Link href="/">
             <Image
               src="/logo.png"
-              alt="Logo Pink Molotov"
+              alt={t("logoAlt")}
               width={650}
               height={650}
               quality={100}
@@ -200,7 +210,7 @@ export default function Navbar() {
           <LanguageSwitcher />
 
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger className="text-black p-1" aria-label="Abrir menu">
+            <SheetTrigger className="text-black p-1" aria-label={t("openMenu")}>
               <Menu size={28} />
             </SheetTrigger>
             <SheetContent
@@ -212,14 +222,14 @@ export default function Navbar() {
                   <Link href="/" onClick={() => setOpen(false)}>
                     <Image
                       src="/logo.png"
-                      alt="Logo Pink Molotov"
+                      alt={t("logoAlt")}
                       width={150}
                       height={150}
                       className="w-auto h-10 object-contain"
                     />
                   </Link>
                 </SheetTitle>
-                <SheetClose className="text-black p-1" aria-label="Fechar menu">
+                <SheetClose className="text-black p-1" aria-label={t("closeMenu")}>
                   <X size={24} />
                 </SheetClose>
               </SheetHeader>

@@ -1,10 +1,11 @@
 'use client';
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
+  const t = useTranslations('LanguageSwitcher');
   const pathname = usePathname();
   const router = useRouter();
 
@@ -20,7 +21,7 @@ export default function LanguageSwitcher() {
   return (
     <div
       className="inline-flex items-center rounded-full border border-white/20 bg-white/5 p-1 backdrop-blur-sm"
-      aria-label="Selecione o idioma"
+      aria-label={t('label')}
     >
       <button
         type="button"

@@ -2,15 +2,17 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useLocale } from "next-intl";
 import Navbar from "../../components/navbar";
 import ArtistSection from "../../components/ArtistSection";
-import { artworks, getArtworkGap } from "../../data/artworks";
+import { artworks, getArtworkGap, resolveText } from "../../data/artworks";
 import useIsDesktop from "../../hooks/useIsDesktop";
+import { Link } from "../../i18n/navigation";
 
 export default function HomePage() {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const isDesktop = useIsDesktop();
+  const locale = useLocale();
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
@@ -55,7 +57,7 @@ export default function HomePage() {
             >
               <Image
                 src={art.image}
-                alt={art.title}
+                alt={resolveText(art.title, locale)}
                 width={800}
                 height={1000}
                 className="h-[50vh] md:h-[70vh] w-auto object-contain shadow-xl transition-transform duration-300 hover:scale-[1.02]"
